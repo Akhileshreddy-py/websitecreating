@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box
+    {
+        border:2px solid rgb(234, 235, 240);
+        width:40vw;
+        height:40vw;
+        /* position:absolute; */
+        /* left:50%; */
+        /* top:50%; */
+        display: inline-block;
+        margin-bottom:5vh;
+        box-shadow: 2px 2px 15px 15px rgb(226, 223, 233);
+    }
+    /* .container
+    {
+        display: flex;+
+    } */
+    body{
+        background-color:white;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box">
+            hello akhilesh reddy what are you doing man 
+        </div>
+    </div>
+    <script>
+        var body=document.getElementsByClassName("container")[0];
+        for(var i=0;i<=10;i++)
+        {
+        var div=document.createElement("div");
+        div.setAttribute("class","box");
+        div.innerHTML="<h1> value is "+i+"</h1>"; 
+    body.appendChild(div);
+        }
+    </script>
+</body>
+</html>
